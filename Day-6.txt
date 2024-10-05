@@ -1,0 +1,85 @@
+Open PowerShell as Administrator:
+
+Press Windows + X and select Windows Terminal (Admin) or PowerShell (Admin).
+Install WSL and Ubuntu: Run the following command in PowerShell:
+
+powershell
+
+command ->   wsl --install
+(Optional) Set WSL Version: To specify WSL 2 as the default version (if needed):
+
+powershell
+
+command ->   wsl --set-default-version 2
+Launch Ubuntu: After installation, launch Ubuntu either from the Start menu or run:
+
+powershell
+
+command ->   wsl
+Create User Account in Ubuntu: When prompted, create a new user account:
+
+bash
+
+command ->   adduser new_username
+Replace new_username with your preferred username. Follow the prompts to set a password.
+Update Package Lists: After setting up your user, run the following command in the Ubuntu terminal:
+
+bash
+
+command ->   sudo apt update
+Upgrade Installed Packages: Upgrade any installed packages with:
+
+bash
+
+command ->   sudo apt upgrade
+Install Ansible: To install Ansible, run:
+
+bash
+
+command ->   sudo apt install ansible
+Verify Ansible Installation: Check the Ansible installation:
+
+bash
+
+command ->   ansible --version
+Verify WSL Installation: To check your WSL installation and see the list of installed distributions, run in PowerShell:
+
+powershell
+
+wsl --list --verbose
+Complete Commands Recap
+Here’s the complete list of commands you would typically execute:
+
+In PowerShell
+powershell
+
+# Install WSL and Ubuntu
+command ->   wsl --install
+
+# Set WSL version to 2 (optional)
+command ->   wsl --set-default-version 2
+
+# Launch Ubuntu (This will also happen automatically after installation)
+command ->   wsl
+In Ubuntu Terminal
+bash
+
+# Create a new user account
+command ->   adduser new_username
+
+# Update package lists
+command ->   sudo apt update
+
+# Upgrade installed packages
+command ->   sudo apt upgrade
+
+# Install Ansible
+command ->   sudo apt install ansible
+
+# Verify Ansible installation
+command ->   ansible --version
+Back in PowerShell
+powershell
+
+# Verify WSL installation
+command ->   wsl --list --verbose
